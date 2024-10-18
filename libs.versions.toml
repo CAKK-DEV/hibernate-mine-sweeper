@@ -1,0 +1,20 @@
+[versions]
+kotlin = "1.9.22"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+ktlint = { id = "org.jmailen.kotlinter", version = "3.16.0" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+
+[libraries]
+# kotlin
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+kotlin-jackson = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+
+# test
+junit = { module = "org.junit.jupiter:junit-jupiter", version = "5.10.0" }
+kotest = { module = "io.kotest:kotest-runner-junit5", version = "5.8.0" }
+mockk = { module = "io.mockk:mockk", version = "1.13.8" }
